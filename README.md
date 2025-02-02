@@ -11,13 +11,9 @@
 * Testing API Endpoints using Postman
 * Running Tests
 
----
-
 ## Overview
 
 The **FAQ Backend API** is a robust, multilingual API built using **Django** that allows users to manage Frequently Asked Questions (FAQs). This API supports features like retrieving FAQ entries in different languages, a Django-powered admin panel to manage FAQs easily, and a flexible backend that can be extended for various use cases. It is built to handle a variety of FAQ-related operations, such as fetching, adding, and translating FAQs into multiple languages.
-
----
 
 ## ✅Features
 
@@ -27,10 +23,6 @@ The **FAQ Backend API** is a robust, multilingual API built using **Django** tha
 - **Database**: Uses **SQLite** by default, with the flexibility to use other databases like PostgreSQL or MySQL.
 - **API Endpoints**: Exposes multiple endpoints to manage FAQ data, including the ability to fetch FAQs in various languages.
 
----
-
-
-
 ## 📍Technologies Used
 
 - **Django**: Web framework used to build the backend.
@@ -39,8 +31,6 @@ The **FAQ Backend API** is a robust, multilingual API built using **Django** tha
 - **Python 3.x**: Programming language used to write the backend.
 - **Pytest**: Testing framework used for write and run tests for your code.
 - **googletrans**: Library used to integrate Google Translate API for automatic language translation
-
----
 
 ## Installation
 
@@ -103,8 +93,6 @@ python manage.py runserver
 ```
 
 Once the server is up and running, the API will be available at `http://127.0.0.1:8000/`.
-
----
 
 ## API Usage
 
@@ -180,10 +168,6 @@ GET /api/faqs/?lang=hi
 
 ```
 
-
-
----
-
 ## Admin Panel
 
 Django comes with a built-in admin panel for managing the FAQ entries. To access the admin panel:
@@ -204,8 +188,6 @@ Django comes with a built-in admin panel for managing the FAQ entries. To access
    Then, navigate to `http://127.0.0.1:8000/admin/` in your browser.
 3. **Log in** : Use the superuser credentials you just created to log in to the admin panel.
 4. **Manage FAQs** : In the admin panel, you will see a section for  **FAQs** . You can add, edit, and delete FAQ entries from here.
-
----
 
 ## Testing API Endpoints Using Postman
 
@@ -253,8 +235,6 @@ You should receive a response similar to:
 4. Click  **Send** .
 
 You should receive a response with FAQs in the specified language, like Hindi in this example.
-
----
 
 ## Running Tests
 
