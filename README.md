@@ -1,11 +1,10 @@
-
 # FAQ Backend API
 
 ## Overview
 
 The **FAQ Backend API** is a robust, multilingual API built using **Django** that allows users to manage Frequently Asked Questions (FAQs). This API supports features like retrieving FAQ entries in different languages, a Django-powered admin panel to manage FAQs easily, and a flexible backend that can be extended for various use cases. It is built to handle a variety of FAQ-related operations, such as fetching, adding, and translating FAQs into multiple languages.
 
-## Features
+## Features ✅
 
 - **FAQ Management**: Supports CRUD (Create, Read, Update, Delete) operations on FAQ entries.
 - **Multilingual Support**: FAQs can be retrieved in multiple languages (default is English).
@@ -13,7 +12,7 @@ The **FAQ Backend API** is a robust, multilingual API built using **Django** tha
 - **Database**: Uses **SQLite** by default, with the flexibility to use other databases like PostgreSQL or MySQL.
 - **API Endpoints**: Exposes multiple endpoints to manage FAQ data, including the ability to fetch FAQs in various languages.
 
-## Technologies Used
+## Technologies Used 📍
 
 - **Django**: Web framework used to build the backend.
 - **Django REST Framework**: For building RESTful APIs.
@@ -36,7 +35,6 @@ Clone this repository to your local machine:
 git clone https://github.com/ROHIT-J0SHI/Faqs-backend-test.git
 cd Faqs-backend-test
 ```
-
 
 ### 2. Create a Virtual Environment
 
@@ -168,22 +166,20 @@ GET /api/faqs/?lang=hi
 Django comes with a built-in admin panel for managing the FAQ entries. To access the admin panel:
 
 1. **Create a Superuser** : Run the following command to create a superuser:
+
    ```
    python manage.py createsuperuser
    ```
 
-    Follow the prompts to create a superuser with a username, email, and password.
-
+   Follow the prompts to create a superuser with a username, email, and password.
 2. **Access the Admin Panel** : Once the superuser is created, start the Django server:
 
    ```
    python manage.py runserver
    ```
 
-    Then, navigate to`http://127.0.0.1:8000/admin/` in your browser.
-
+   Then, navigate to `http://127.0.0.1:8000/admin/` in your browser.
 3. **Log in** : Use the superuser credentials you just created to log in to the admin panel.
-
 4. **Manage FAQs** : In the admin panel, you will see a section for  **FAQs** . You can add, edit, and delete FAQ entries from here.
 
 ---
@@ -226,7 +222,6 @@ You should receive a response similar to:
 
 ```
 
-
 ### 2. Test `GET /api/faqs/?lang=<language_code>`
 
 1. Open  **Postman** .
@@ -248,7 +243,6 @@ python manage.py test
 ```
 
 This will run all the test cases defined in the `tests.py` file and ensure the API endpoints are functioning correctly.
-
 
 ## Thank You!
 
