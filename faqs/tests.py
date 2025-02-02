@@ -39,9 +39,8 @@ class FAQTests(TestCase):
 
         data = response.json()
 
-        # ✅ Corrected this check
-        self.assertEqual(data["total_faqs"], 3)  # Ensure total count is correct
-        self.assertEqual(len(data["faqs"]), 3)  # Ensure all FAQs are returned
+        self.assertEqual(data["total_faqs"], 3) 
+        self.assertEqual(len(data["faqs"]), 3) 
 
     def test_api_language_translation(self):
         """Test API returns FAQs in a different language (Hindi)."""
@@ -50,15 +49,11 @@ class FAQTests(TestCase):
 
         data = response.json()
 
-        # ✅ Debugging print removed (unnecessary now)
         
-        # Ensure the response has the correct structure
         self.assertEqual(data["status"], "success")  
         self.assertIn("total_faqs", data)
         self.assertIn("faqs", data)  
-        self.assertTrue(isinstance(data["faqs"], list))  # Ensure "faqs" is a list
-        
-        # Ensure at least one FAQ exists before checking the structure
+        self.assertTrue(isinstance(data["faqs"], list))  
         if data["faqs"]:  
             self.assertIn("question", data["faqs"][0])
             self.assertIn("answer", data["faqs"][0])

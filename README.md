@@ -1,10 +1,25 @@
 # FAQ Backend API
 
+## Table of Content
+
+* Overview
+* Features
+* Technologies Used
+* Installation
+* API Usage
+* Admin Panel
+* Testing API Endpoints using Postman
+* Running Tests
+
+---
+
 ## Overview
 
 The **FAQ Backend API** is a robust, multilingual API built using **Django** that allows users to manage Frequently Asked Questions (FAQs). This API supports features like retrieving FAQ entries in different languages, a Django-powered admin panel to manage FAQs easily, and a flexible backend that can be extended for various use cases. It is built to handle a variety of FAQ-related operations, such as fetching, adding, and translating FAQs into multiple languages.
 
-## Features ✅
+---
+
+## ✅Features
 
 - **FAQ Management**: Supports CRUD (Create, Read, Update, Delete) operations on FAQ entries.
 - **Multilingual Support**: FAQs can be retrieved in multiple languages (default is English).
@@ -12,7 +27,11 @@ The **FAQ Backend API** is a robust, multilingual API built using **Django** tha
 - **Database**: Uses **SQLite** by default, with the flexibility to use other databases like PostgreSQL or MySQL.
 - **API Endpoints**: Exposes multiple endpoints to manage FAQ data, including the ability to fetch FAQs in various languages.
 
-## Technologies Used 📍
+---
+
+
+
+## 📍Technologies Used
 
 - **Django**: Web framework used to build the backend.
 - **Django REST Framework**: For building RESTful APIs.
@@ -160,6 +179,10 @@ GET /api/faqs/?lang=hi
 }
 
 ```
+
+
+
+---
 
 ## Admin Panel
 
